@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="/css/view.css" rel="stylesheet" />
+</head>
+<body class="pt-5">
+    <div class="container">
+        <span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+        <h1 class="text-center">Modo Jónico</h1>
+        <span class="participants-counter">
+            <img src="images/people.png">
+            <span class="number">284</span> 
+        </span>
+    </div>
+    <span class="content"></span>
+    <div class="caja-padre">
+        <div class="contenedor">
+            <h2>Termómetro emocional</h2>
+            <div class="emotions">
+                <div class="details">
+                    <span>Alegría</span>
+                    <span id="alegria-value">50%</span>
+                </div>
+                <div class="menu">
+                    <div id="alegria-menu"></div>
+                </div>
+            </div>
+            <div class="emotions">
+                <div class="details">
+                    <span>Tristeza</span>
+                    <span id="tristeza-value">20%</span>
+                </div>
+                <div class="menu">
+                    <div id="tristeza-menu"></div>
+                </div>
+            </div>
+            <div class="emotions">
+                <div class="details">
+                    <span>Sorpresa</span>
+                    <span id="sorpresa-value">10%</span>
+                </div>
+                <div class="menu">
+                    <div id="sorpresa-menu"></div>
+                </div>
+            </div>
+            <div class="emotions">
+                <div class="details">
+                    <span>Asco</span>
+                    <span id="asco-value">20%</span>
+                </div>
+                <div class="menu">
+                    <div id="asco-menu"></div>
+                </div>
+            </div>
+            <div class="emotions">
+                <div class="details">
+                    <span>Miedo</span>
+                    <span id="miedo-value">30%</span>
+                </div>
+                <div class="menu">
+                    <div id="miedo-menu"></div>
+                </div>
+            </div>
+            <div class="emotions">
+                <div class="details">
+                    <span>Enojo</span>
+                    <span id="enojo-value">15%</span>
+                </div>
+                <div class="menu">
+                    <div id="enojo-menu"></div>
+                </div>
+            </div>
+            <!-- <div class="emotions">
+                <div class="details">
+                    <span>Otro</span>
+                    <span id="otro-value">5%</span>
+                </div>
+                <div class="menu">
+                    <div id="otro-menu"></div>
+                </div>
+            </div> -->
+            <div class="valence">
+                <div class="bar-wrap">
+                    <div class="positive">
+                        <p id="pos-value">50%</p>
+                        <p>Positivo</p>
+                    </div>
+                    <div class="neutral">
+                        <p id="neu-value">25%</p>
+                        <p>Neutro</p>
+                    </div>
+                    <div class="negative">
+                        <p id="neg-value">25%</p>
+                        <p>Negativo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/TagCloud.js"> </script>
+<script src="/js/view.js" type="module"></script>
+</body>
+</html>

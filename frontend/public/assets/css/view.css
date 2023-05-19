@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: white;
+}
+
+.tagcloud {
+    /*font-family: 'Poppins', sans-serif;*/  
+    font-size: 20px;
+    margin: left;
+    margin-left:100px;
+    width: 100%;
+  }
+  .tagcloud--item:hover {
+    color: #36454F;
+  }
+
+.caja-padre{
+  width: 30%;
+  min-width: 300px;
+  position: relative;
+  transform: translate(-25%,-100%);
+  left: 70%;
+  top: 20%;
+}
+
+.contenedor{
+  width:100%;
+  padding: 30px 30px 50px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.container{
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participants-counter{
+  display: flex;
+  align-items:center;
+}
+
+.number{
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2{
+  text-align: left;
+  font-size: 20px;
+}
+
+img{  
+  height: 40px;  
+  width: 40px; 
+}  
+
+
+#right{    
+  float: right;  
+}
+
+.emotions:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+.menu{
+  position: relative;
+  font-size: 0.25vmax;
+  width: 100em;
+  border: 1px solid darkslategrey;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+
+.menu div{
+  position: relative;
+  box-shadow: inset -100em 0 0 0 #f7f7f7;
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  background: linear-gradient(450deg, cyan, yellow, red);
+  font-size: 0.25vmax;
+}
+
+#alegria-menu{
+  animation: alegria-bar 5s forwards;
+}
+
+@keyframes alegria-bar {
+  100%{
+    box-shadow: inset -20em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#tristeza-menu{
+  animation: tristeza-bar 5s forwards;
+}
+
+@keyframes tristeza-bar {
+  100%{
+    box-shadow: inset -80em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#sorpresa-menu{
+  animation: sorpresa-bar 5s forwards;
+}
+
+@keyframes sorpresa-bar {
+  100%{
+    box-shadow: inset -90em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#asco-menu{
+  animation: asco-bar 5s forwards;
+}
+
+@keyframes asco-bar {
+  100%{
+    box-shadow: inset -80em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#miedo-menu{
+  animation: miedo-bar 5s forwards;
+}
+
+@keyframes miedo-bar {
+  100%{
+    box-shadow: inset -70em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#enojo-menu{
+  animation: enojo-bar 5s forwards;
+}
+
+@keyframes enojo-bar {
+  100%{
+    box-shadow: inset -85em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+#otro-menu{
+  animation: otro-bar 5s forwards;
+}
+
+@keyframes otro-bar {
+  100%{
+    box-shadow: inset -95em 0 0 0 #f7f7f7; /* acá va el porcentaje */
+    width: 100%;
+  }
+}
+
+.bar-wrap{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 0.25vmax;
+  width: 100em;
+  height: 30px;
+  border: 1px solid darkslategrey;
+  border-radius: 20px;
+  background-color: None;
+  text-align: center;
+}
+
+.positive{
+  width: 0%;
+  background-color: #c9c9c9;
+  float: left;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 4em;
+  line-height: 1.1em;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: darkslategrey;
+  animation: positive-bar 5s forwards;
+}
+
+@keyframes positive-bar {
+  100%{
+    width: 50%;
+  }
+}
+
+.neutral{
+  width: 0%;
+  background-color: #c9c9c9;
+  float: left;
+  font-size: 4em;
+  line-height: 1.1em;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: darkslategrey;
+  animation: neutral-bar 5s forwards;
+}
+
+@keyframes neutral-bar {
+  100%{
+    width: 25%;
+  }
+}
+
+.negative{
+  width: 0%;
+  background-color: #c9c9c9;
+  float: left;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 4em;
+  line-height: 1.1em;
+  animation: negative-bar 5s forwards;
+}
+
+@keyframes negative-bar {
+  100%{
+    width: 25%;
+  }
+}

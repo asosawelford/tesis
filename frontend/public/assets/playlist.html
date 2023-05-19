@@ -1,0 +1,47 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/playlist.css">
+<div id="player">
+  <audio id="audio" src=""></audio>
+  <div class="container">
+		<div class="metadata">
+			<img class="album-art" id="album-art" src="images/logo_static.png" alt="Cargando...">
+			<div class="song-info">
+				<h1 class="song-title" id="song-title">Cargando...</h1>
+        <p></p>
+        <div class="album-artist-year">
+          <span class="artist-album-year" id="artist-name"></span>
+          <span class="artist-album-year">&bull;</span>
+          <span class="artist-album-year" id="album-name"></span>
+          <span class="artist-album-year">&bull;</span>
+          <span class="artist-album-year" id="release-year"></span>
+        </div>
+			</div>
+		</div>
+	</div>
+  <div id="controls">
+    <button id="prev"><i class="bi bi-rewind-fill"></i></button>
+    <button id="play-pause"><i class="bi bi-play-fill"></i></button>
+    <button id="next"><i class="bi bi-fast-forward-fill"></i></button>
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+  </div>
+  <div id="progress-bar">
+    <div class="progress"></div>
+  </div>
+  <div id="time">
+    <span id="current-time">0:00</span>
+    <span id="duration">0:00</span>
+  </div>
+  <div id="playlist">
+    <ul id="songs">
+      <li id="clasica" data-src="music/snippets/j_clasica.wav" class="active-song">Clásica</li>
+      <li id="jazz" data-src="music/snippets/j_jazz.wav">Blues, jazz y fusión</li>
+      <li id="metalarg" data-src="music/snippets/j_metalarg.wav" >Rock y metal argentino</li>
+      <li id="metalint" data-src="music/snippets/j_metalint.wav">Rock y metal internacional</li>
+      <li id="pop" data-src="music/snippets/j_pop.wav">Pop</li>
+    </ul>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/js/playlist.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>

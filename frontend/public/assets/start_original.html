@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="/css/start.css" rel="stylesheet" />
+</head>
+<body class="pt-5">
+  <h3 class="text-center">Leé con atención</h3><br>
+  <p style="text-align:justify; max-width:700px; margin-left:auto; margin-right:auto">Te pediremos que escuches melodías y
+    escribas tus pensamientos.<br><br>Tu información y los textos podrán utilizarse exclusivamente con fines de
+    investigación de forma anónima y confidencial, sin ningún fin de lucro. Los resultados podrán publicarse en revistas
+    científicas y otros medios conforme a las prácticas estándar del campo.<br><br>
+    Al presionar el botón “Siguiente” darás consentimiento para que tus
+    datos se recopilen y utilicen bajo estas condiciones.</p><br><br>
+  <h4 class="text-center" style="max-width:700px; margin-left:auto; margin-right:auto">Para participar, escribí tus iniciales y los últimos tres números de tu DNI:</h4>
+  <div class="form">
+    <form id="form" autocomplete="off">
+      <input type="text" name="initials" id="initials_input" placeholder = "AAA" style="width: 100px" minlength="2" maxlength="3" oninput="this.value = this.value.replace(/[^aA-zZ]/g, '').toUpperCase();" pattern=".{2,3}" title="Ingresar 2 o 3 letras" required/>
+      <input type="text" name="DNI" id="DNI_input" placeholder = "000" style="width: 100px;" minlength="3" maxlength="3" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');" pattern=".{3,3}" title="Ingresar 3 números" required/>
+      <br><br>
+      <!--<input type="checkbox" id="consent" name="consent" required>
+      <label for="consent" style="max-width:700px">Doy mi consentimiento para que mis datos se recopilen y utilicen bajo estas condiciones.</label>-->
+      <br><br>
+      <input type="submit" id="sendButton" value="Siguiente">
+    </form>
+  </div>
+<script src="/js/start.js" type="module"></script>
+<script src="/js/jsonFormat.js"></script>
+<script src="/js/cookies.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consigna</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="/css/start.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    h1 {
+      font-size: 26px; /* Adjust the font size as desired */
+    }
+    
+    h2 {
+      font-size: 20px; /* Adjust the font size as desired */
+    }
+    h3 {
+      font-size: 20px; /* Adjust the font size as desired */
+    }
+
+    ul li {
+      font-size: 18px; /* Adjust the font size of the bullet points */
+    }
+
+    p{
+      font-size: 18px;
+    }
+    
+    body {
+      background-color: #dadada; /* Adjust the background color as desired */
+    }
+
+    /* Added styles for the progress bar */
+    #progress-bar {
+      width: 10%;
+      height: 12px;
+      background-color: #ccc;
+    }
+
+    #progress-bar-fill {
+      width: 0%;
+      height: 100%;
+      background-color: #007bff;
+    }
+  </style>
+</head>
+<body class="pt-5">
+
+  <h1 class="text-center">Instrucciones</h1><br>
+  <p style="text-align:justify; max-width:1100px; margin-left:auto; margin-right:auto">A continuación
+     vas a escuchar una serie de audios cortos (3-5 segundos) que contienen distintos tipos de voces. 
+     Algunas de esas voces: <br>  Pueden sonarte más <strong>humanas</strong>  <font size="+1">&#128483;</font>  <br> 
+     y otras sonarte más <strong>roboticas</strong>&ensp;&#129302; <br> El propósito de este test es que evalues la calidad
+      de cada voz. Para hacer eso, en cada ejemplo vas tenes que calificar las voces de acuerdo a la 
+      siguiente escala de naturalidad: </p>
+      <div style="display: flex; justify-content: center;">
+        <ul style="text-align: left;">
+          <u><strong> Puntuación --- Naturalidad de la voz </strong></u>
+          <li>5 --- Completamente natural</li>
+          <li>4 --- Bastante natural</li>
+          <li>3 --- Natural y antinatural en partes iguales</li>
+          <li>2 --- Bastante antinatural</li>
+          <li>1 --- Completamente antinatural</li>
+        </ul>
+      </div>
+      
+      
+    <p style="text-align:justify; max-width:1100px; margin-left:auto; margin-right:auto">
+      En el siguiente audio vas a escuchar una voz que tiene un puntaje de referencia de 5,
+       luego, una pausa, y seguido a eso una voz con un puntaje de referencia de 1.
+    </p>
+    <div id="player">
+      <audio id="audio"></audio>
+      <div id="controls">
+        <button id="play-pause" class="btn btn-primary rounded-circle">
+          <i id="play-icon" class="fas fa-play"></i>
+          <i id="pause-icon" class="fas fa-pause"></i>
+        </button>
+        <div id="progress-bar-container">
+          <div id="progress-bar-fill"></div>
+        </div>
+      </div>
+    </div>   
+      <!-- Added progress bar -->
+      <div id="progress-bar">
+        <div id="progress-bar-fill"></div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-success rounded-pill" style="width: 130px; height: 65px; font-size:20px; background-color: #4CAF50;" id="nextButton">Siguiente</button>
+    </div>
+<script src="/js/consigna.js" type="module"></script>
+<script src="/js/cookies.js" type="module"></script>
+</body>
+</html>
