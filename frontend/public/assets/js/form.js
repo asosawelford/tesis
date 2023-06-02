@@ -19,8 +19,7 @@ form.addEventListener('submit', function (e) {
 
     async function query(form_data) {
         const response = await fetch(
-            //"http://localhost:8000/profiles_api/receive_form/",
-            url + "/profiles_api/receive_form/",
+            url + "/tts_sorter/receive_form/",
             {
                 headers: new Headers({ 'Content-type': 'application/json' }),
                 method: "POST",

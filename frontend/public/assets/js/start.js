@@ -6,7 +6,7 @@ const volume = document.getElementById("volume");
 const playIcon = document.getElementById("play-icon");
 const pauseIcon = document.getElementById("pause-icon");
 
-audio.src = "calibration_signals/volume.wav";
+audio.src = "calibration_signals/volume_looped.wav";
 
 // Functions for audio player controls
 playPause.addEventListener("click", () => {

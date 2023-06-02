@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
   <link href="/css/form.css" rel="stylesheet" />
 </head>
 <body class="pt-5">
-  <h3 class="text-center">Por favor completá el siguiente cuestionario</h3>
+  <h3 class="text-center">Antes de comenzar, por favor completá el siguiente cuestionario</h3>
   <div class="form">
     <form id="form" autocomplete="off">
         <label for="age">Edad:</label>
@@ -21,40 +22,91 @@
             <label><input id="sex" name="sex" type="radio" value="M" required/><span>Masculino</span></label>
             <label><input id="sex" name="sex" type="radio" value="X" required/><span>Prefiero no decir</span></label>
         </div><br>
-        <p align="left">¿Cuál es el mayor nivel educativo que alcanzaste?</p>
+        
+        <select id="country" name="country" onchange="showProvinces()">
+          <option value="">Selecciona tu país</option>
+          <option value="AR">Argentina</option>
+          <option value="BO">Bolivia</option>
+          <option value="CL">Chile</option>
+          <option value="CO">Colombia</option>
+          <option value="CR">Costa Rica</option>
+          <option value="CU">Cuba</option>
+          <option value="DO">República Dominicana</option>
+          <option value="EC">Ecuador</option>
+          <option value="SV">El Salvador</option>
+          <option value="ES">España</option>
+          <option value="GT">Guatemala</option>
+          <option value="HN">Honduras</option>
+          <option value="MX">México</option>
+          <option value="NI">Nicaragua</option>
+          <option value="PA">Panamá</option>
+          <option value="PY">Paraguay</option>
+          <option value="PE">Perú</option>
+          <option value="PR">Puerto Rico</option>
+          <option value="UY">Uruguay</option>
+          <option value="VE">Venezuela</option>
+        </select><br>
+        
+        <div id="provinceContainer" style="display: none;">
+          <label for="province"></label>
+          <select id="province" name="province">
+            <option value="">Selecciona tu provincia</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tucumán">Tucumán</option>
+
+
+            <option value=""></option>
+
+            
+          </select><br>
+        </div>
+        
+        <script>
+          function showProvinces() {
+            var countrySelect = document.getElementById("country");
+            var provinceContainer = document.getElementById("provinceContainer");
+            var provinceSelect = document.getElementById("province");
+            if (countrySelect.value === "AR") {
+              provinceContainer.style.display = "block";
+              provinceSelect.required = true;
+            } else {
+              provinceContainer.style.display = "none";
+              provinceSelect.required = false;
+            }
+          }
+        </script>
+        <br></br>
+        <p align="left">¿Que grado de familiaridad consideras que tenes con los asistentes virtuales? (ej. Siri, Alexa, OK Google, Cortana) </p>
         <div class="likert">
-            <label><input id="education" name="education" type="radio" value="PI"/><span>Primario incompleto</span></label>
-            <label><input id="education" name="education" type="radio" value="P"/><span>Primario completo</span></label>
-            <label><input id="education" name="education" type="radio" value="S"/><span>Secundario completo</span></label>
-            <label><input id="education" name="education" type="radio" value="T"/><span>Terciario completo</span></label>
-            <label><input id="education" name="education" type="radio" value="U"/><span>Universitario completo</span></label>
-            <label><input id="education" name="education" type="radio" value="PG"/><span>Posgrado completo</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="0"required/><span>Nula - No se lo que son</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="1"required/><span>Poca</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="2"required/><span>Moderada</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="3" required/><span>Mucha - Los uso a diario</span></label>
         </div><br>
-        <!--<p align="left">¿Cuántos años de educación formal tenés?</p>
-        <p align="left" style="font-size:14px">Contá a partir de la escuela primaria. Por ejemplo, si completaste 7 años de primaria y 2 de secundaria, poné 9.</p>
-        <p align="left" style="font-size:14px">Si hiciste 7 de primaria, 5 de secundaria, 5 de universidad y 4 de doctorado, poné 21.</p>
-        <input type="number" id="education_num" placeholder = "9" style="width: 100px" minlength="1" maxlength="3" pattern=".{1,3}" title="Ingresar años de educación" required/><br>-->
-        <p align="left">¿Qué nivel de formación tenés en armonía y escalas musicales?</p>
-        <div class="likert">
-            <label><input id="musical_knowledge" name="musical_knowledge" type="radio" value="1" required/><span>Nulo</span></label>
-            <label><input id="musical_knowledge" name="musical_knowledge" type="radio" value="2" required/><span>Bajo</span></label>
-            <label><input id="musical_knowledge" name="musical_knowledge" type="radio" value="3" required/><span>Medio</span></label>
-            <label><input id="musical_knowledge" name="musical_knowledge" type="radio" value="4" required/><span>Alto</span></label>
-            <label><input id="musical_knowledge" name="musical_knowledge" type="radio" value="5" required/><span>Experto</span></label>
-        </div><br>
-        <p align="left">¿Tocás algún instrumento?</p>
-        <div class="likert">
-          <label><input id="instrument" name="instrument" type="radio" value="no" required/><span>No</span></label>
-          <label><input id="instrument" name="instrument" type="radio" value="yes" required/><span>Sí</span></label>
-        </div><br>
-        <p align="left">¿Estás familiarizado/a con el concepto de modos en música?</p>
-        <div class="likert">
-            <label><input id="knows_modes" name="knows_modes" type="radio" value="1" required/><span>Nada</span></label>
-            <label><input id="knows_modes" name="knows_modes" type="radio" value="2" required/><span>Poco</span></label>
-            <label><input id="knows_modes" name="knows_modes" type="radio" value="3" required/><span>Medio</span></label>
-            <label><input id="knows_modes" name="knows_modes" type="radio" value="4" required/><span>Bastante</span></label>
-            <label><input id="knows_modes" name="knows_modes" type="radio" value="5" required/><span>Mucho</span></label>
-        </div><br>
+        <label for="auris"> Si lo sabes, ingresa el modelo o marca de tus auriculares: </label>
+        <input type="string" id="auris" name="auris" placeholder = "" style="width: 300px" style="height: 20px" ><br>
         <input type="checkbox" id="consent" name="consent" required>
         <label for="consent" style="max-width:700px">Doy mi consentimiento para que mis datos se recopilen y utilicen bajo estas condiciones.</label>
         <input type="submit" id="sendButton" value="Siguiente">
