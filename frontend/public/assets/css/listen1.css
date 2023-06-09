@@ -63,6 +63,18 @@
   #pause-icon {
     display: none;
   }
+  #pause-icon2 {
+    display: none;
+  }
+  #pause-icon3 {
+    display: none;
+  }
+  #pause-icon4 {
+    display: none;
+  }
+  #pause-icon5 {
+    display: none;
+  }
   
   #play-pause {
     margin-right: 10px;
@@ -79,6 +91,78 @@
   }
   
   #play-pause:hover {
+    background-color: #444;
+    
+  }
+  
+  #play-pause2 {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #play-pause2:hover {
+    background-color: #444;
+  }
+  #play-pause3 {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #play-pause3:hover {
+    background-color: #444;
+  }
+  
+  #play-pause4 {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #play-pause4:hover {
+    background-color: #444;
+  }
+  
+  #play-pause5 {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #play-pause5:hover {
     background-color: #444;
   }
   
@@ -102,40 +186,45 @@
   #next:hover {
     background-color: #eee;
   }
-  
-  #playlist {
-    width: 100%;
-    margin: 2px 0;
-  }
-  
-  #songs {
-    list-style: none;
-    padding: 0;
-  }
-  
-  #songs li {
-    display: inline-block;
-    vertical-align: top;
-    align-items: center;
-    width: 150px;
-    height: 150px;
-    padding: 20px;
-    background-color: #ddd;
-    margin: 10px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  #songs li:hover {
-    background-color: #eee;
-  }
-  
-  #songs li.active-song {
-    background-color: lightblue;
-  }
-  
+
   #progress-bar {
+    width: 10%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  #progress-bar2 {
+    width: 10%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 2px;
+    cursor: pointer;
+  }
+  #progress-bar3 {
+    width: 10%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 2px;
+    cursor: pointer;
+  }
+  #progress-bar4 {
+    width: 10%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 2px;
+    cursor: pointer;
+  }
+  #progress-bar5 {
     width: 10%;
     height: 20px;
     background-color: #ddd;
@@ -162,19 +251,36 @@
     margin-left: 10px;
   }
   
-  #progress-bar-fill {
-    height: 100%;
-    background-color: #024e35;
-    width: 0;
+  #progress-bar-container2 {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    margin-left: 10px;
+  }
+  #progress-bar-container3 {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    margin-left: 10px;
+  }
+  #progress-bar-container4 {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    margin-left: 10px;
+  }
+  #progress-bar-container5 {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    margin-left: 10px;
   }
   
-  #play-pause {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-  }
-  
-  #progress-bar .progress {
+  #progress-bar > .progress,
+  #progress-bar2 > .progress,
+  #progress-bar3 > .progress,
+  #progress-bar4 > .progress,
+  #progress-bar5 > .progress  {
     width: 0;
     height: 100%;
     background-color: #333;
@@ -182,6 +288,7 @@
     transition: width 0.2s ease;
     cursor: pointer;
   }
+  
   
   #volume {
     width: 200px;
@@ -201,52 +308,6 @@
     border-radius: 50%;
     background-color: #333;
     cursor: pointer;
-  }
-  
-  #time {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .metadata {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 600px;
-    background-color: #dadada;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .album-art {
-    flex: 0 0 150px;
-    height: 150px;
-    background-color: #dadada;
-    margin-right: 20px;
-    border-radius: 5px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .song-info {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .song-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .artist-album-year {
-    font-size: 16px;
-    color: #dadada;
-    margin: 5px 0 0 0;
   }
   
   .likert {
@@ -357,8 +418,48 @@
     height: 12px;
     background-color: #ccc;
   }
+  #progress-bar2 {
+    width: 10%;
+    height: 12px;
+    background-color: #ccc;
+  }
+  #progress-bar3 {
+    width: 10%;
+    height: 12px;
+    background-color: #ccc;
+  }
+  #progress-bar4 {
+    width: 10%;
+    height: 12px;
+    background-color: #ccc;
+  }
+  #progress-bar5 {
+    width: 10%;
+    height: 12px;
+    background-color: #ccc;
+  }
   
   #progress-bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+  }
+  #progress-bar-fill2 {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+  }
+  #progress-bar-fill3 {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+  }
+  #progress-bar-fill4 {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+  }
+  #progress-bar-fill5 {
     width: 0%;
     height: 100%;
     background-color: #007bff;
