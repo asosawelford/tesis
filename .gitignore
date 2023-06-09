@@ -163,4 +163,4 @@ cython_debug/
 tests
 .vscode
 frontend\public\assets\audios
-**\frontend\public\assets\stimuli
+frontend\public\assets\stimuli\
