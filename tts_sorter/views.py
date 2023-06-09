@@ -1,7 +1,12 @@
 from django.shortcuts import render
 import json
+from django.http import HttpResponse, HttpResponseBadRequest
+import csv
 
 # Create your views here.
+
+def say_hello(request): 
+    return HttpResponse('hello world')
 
 def receive_form(request):
     """
@@ -25,13 +30,18 @@ def receive_form(request):
     else:
         province = 'NA'
     familiaridad = body['familiaridad']
-    auriculares = body['auriculares']
+    auriculares = body['auris']
 
     print(id_participant, age, sex, country, province, familiaridad, auriculares)
+    json.dumps({})
     
+        # Open the CSV file in append mode
+    with open('participants.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
 
-    # Append new data to results.csv
-    csv_file = open('results.csv', 'a')
+        # Write the variables to the CSV file
+        writer.writerow([age, sex, country, province, familiaridad, auriculares])
     
-
+    
+    return HttpResponse( json.dumps({}), status=200)
     

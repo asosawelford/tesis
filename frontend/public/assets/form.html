@@ -9,20 +9,53 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link href="/css/form.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 10px; /* Add padding to give space between the title and the top of the screen */
+    }
+
+    .title {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff; /* Add a background color to the title */
+      padding: 0px;
+      text-align: center;
+      z-index: 1; /* Ensure the title appears on top of other elements */
+    }
+    h1 {
+      font-size: 20px; /* Adjust the font size as desired */
+    }
+    
+    h2 {
+      font-size: 20px; /* Adjust the font size as desired */
+    }
+    h3 {
+      font-size: 20px; /* Adjust the font size as desired */
+    }
+
+    ul li {
+      font-size: 18px; /* Adjust the font size of the bullet points */
+    }
+    body {
+      background-color: #dadada; /* Adjust the background color as desired */
+    }
+  </style>
 </head>
 <body class="pt-5">
-  <h3 class="text-center">Antes de comenzar, por favor completá el siguiente cuestionario</h3>
+  <h1 class="text-center">Antes de comenzar, por favor completá el siguiente cuestionario</h1>
   <div class="form">
     <form id="form" autocomplete="off">
         <label for="age">Edad:</label>
-        <input type="number" id="age" name="age" placeholder = "18" style="width: 100px" min="1" max="120" minlength="1" maxlength="3" pattern=".{1,3}" title="Ingresar una edad válida" required/><br>
-        <p align="left">¿Cuál es tu género?</p>
+        <input type="number" id="age" name="age" placeholder="18" style="width: 100px" min="1" max="120" minlength="1" maxlength="3" pattern=".{1,3}" title="Ingresar una edad válida" required/><br>
+        <p>¿Cuál es tu género?</p>
         <div class="likert">
             <label><input id="sex" name="sex" type="radio" value="F" required/><span>Femenino</span></label>
             <label><input id="sex" name="sex" type="radio" value="M" required/><span>Masculino</span></label>
             <label><input id="sex" name="sex" type="radio" value="X" required/><span>Prefiero no decir</span></label>
         </div><br>
-        
+
         <select id="country" name="country" onchange="showProvinces()">
           <option value="">Selecciona tu país</option>
           <option value="AR">Argentina</option>
@@ -46,7 +79,7 @@
           <option value="UY">Uruguay</option>
           <option value="VE">Venezuela</option>
         </select><br>
-        
+
         <div id="provinceContainer" style="display: none;">
           <label for="province"></label>
           <select id="province" name="province">
@@ -75,14 +108,8 @@
             <option value="Santiago del Estero">Santiago del Estero</option>
             <option value="Tierra del Fuego">Tierra del Fuego</option>
             <option value="Tucumán">Tucumán</option>
-
-
-            <option value=""></option>
-
-            
           </select><br>
         </div>
-        
         <script>
           function showProvinces() {
             var countrySelect = document.getElementById("country");
@@ -97,22 +124,25 @@
             }
           }
         </script>
-        <br></br>
-        <p align="left">¿Que grado de familiaridad consideras que tenes con los asistentes virtuales? (ej. Siri, Alexa, OK Google, Cortana) </p>
+
+        <p><br>¿Qué grado de familiaridad consideras que tienes con los asistentes virtuales? (ej. Siri, Alexa, OK Google, Cortana)</p>
         <div class="likert">
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="0"required/><span>Nula - No se lo que son</span></label>
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="1"required/><span>Poca</span></label>
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="2"required/><span>Moderada</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="0" required/><span>Nula - No sé lo que son</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="1" required/><span>Poca</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="2" required/><span>Moderada</span></label>
             <label><input id="familiaridad" name="familiaridad" type="radio" value="3" required/><span>Mucha - Los uso a diario</span></label>
         </div><br>
-        <label for="auris"> Si lo sabes, ingresa el modelo o marca de tus auriculares: </label>
-        <input type="string" id="auris" name="auris" placeholder = "" style="width: 300px" style="height: 20px" ><br>
+
+        <label for="auris">Si lo sabes, ingresa el modelo o marca de tus auriculares:</label>
+        <input type="string" id="auris" name="auris" placeholder="" style="width: 300px; height: 20px;"><br>
+
         <input type="checkbox" id="consent" name="consent" required>
-        <label for="consent" style="max-width:700px">Doy mi consentimiento para que mis datos se recopilen y utilicen bajo estas condiciones.</label>
+        <label for="consent">Doy mi consentimiento para que mis datos se recopilen y utilicen bajo estas condiciones.</label><br>
+
         <input type="submit" id="sendButton" value="Siguiente">
     </form>
-  <script src="/js/form.js" type="module"></script>  
-  <script src="/js/cookies.js" type="module"></script>
+    <script src="/js/form.js" type="module"></script>
+    <script src="/js/cookies.js" type="module"></script>
   </div>
 </body>
 </html>
