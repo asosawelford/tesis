@@ -4,101 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escuchar</title>
+  <title>Sound Rating Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link href="/css/play.css" rel="stylesheet" />
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="/css/listen1.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Audio Rating Page</h1>
-
-  <div id="stimulus-container">
-    <!-- Placeholder div to display audio stimuli -->
+  <h1>Paso 1</h1>
+  <div id="sound-container">
+      <div class="audio-control">
+          <audio class="audio-player"></audio>
+          <div class="audio-controls">
+              <button class="start-button">Start</button>
+              <button class="stop-button">Stop</button>
+          </div>
+          <div class="progress-bar-container">
+              <div class="progress-bar"></div>
+          </div>
+          <div class="rating-container">
+              <label for="rating">Rate the sound:</label>
+              <select class="rating" name="rating">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+          </div>
+      </div>
+      <button id="next-button">Next</button>
   </div>
-
-  <div id="rating-container">
-    <!-- Placeholder div to display rating form -->
-  </div>
-
-  <button onclick="nextStimulus()">Next</button>
-
-  <script>
-    var stimuli = []; // Array to store audio stimuli
-    var currentStimulusIndex = 0;
-
-    // Function to request audio stimuli from the backend
-    function getStimuli() {
-      // Send a request to the backend to get the audio stimuli
-      // You can modify this code to suit your backend implementation
-      // Example using fetch API:
-      fetch('/getStimuli')
-        .then(response => response.json())
-        .then(data => {
-          // Store the received stimuli in the array
-          stimuli = data.stimuli;
-          // Display the first stimulus
-          displayStimulus(currentStimulusIndex);
-        })
-        .catch(error => {
-          // Handle any errors that occur during stimulus retrieval
-          console.error(error);
-        });
-    }
-
-    // Function to display the current stimulus
-    function displayStimulus(index) {
-      var stimulusContainer = document.getElementById('stimulus-container');
-      stimulusContainer.innerHTML = '';
-
-      var audio = document.createElement('audio');
-      audio.src = stimuli[index].url;
-      audio.controls = true;
-      stimulusContainer.appendChild(audio);
-    }
-
-    // Function to display the rating form for the current stimulus
-    function displayRatingForm(index) {
-      var ratingContainer = document.getElementById('rating-container');
-      ratingContainer.innerHTML = '';
-
-      var ratingForm = document.createElement('form');
-
-      var ratingInput = document.createElement('input');
-      ratingInput.type = 'number';
-      ratingInput.id = 'rating-' + stimuli[index].id;
-      ratingInput.min = '1';
-      ratingInput.max = '5';
-      ratingInput.required = true;
-
-      var submitButton = document.createElement('button');
-      submitButton.type = 'button';
-      submitButton.innerText = 'Submit Rating';
-      submitButton.onclick = function() {
-        rateStimulus(stimuli[index].id);
-        nextStimulus();
-      };
-
-      ratingForm.appendChild(ratingInput);
-      ratingForm.appendChild(submitButton);
-
-      ratingContainer.appendChild(ratingForm);
-    }
-
-    // Function to move to the next stimulus
-    function nextStimulus() {
-      if (currentStimulusIndex < stimuli.length - 1) {
-        currentStimulusIndex++;
-        displayStimulus(currentStimulusIndex);
-        displayRatingForm(currentStimulusIndex);
-      } else {
-        // If all stimuli have been rated, you can redirect to the next page
-        // Replace "next-page.html" with the URL of your next page
-        window.location.href = 'next-page.html';
-      }
-    }
-
-    // Call the getStimuli function to initiate the process
-    getStimuli();
-  </script>
+  
+  <script src="/js/listen1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 </body>
 </html>

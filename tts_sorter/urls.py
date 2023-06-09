@@ -6,4 +6,6 @@ from django.views.decorators.csrf import csrf_exempt
 urlpatterns = [
     path('hello/', views.say_hello),
     path('receive_form/', csrf_exempt(views.receive_form)),
+    path('receive_rate/', csrf_exempt(views.receive_rate)),
+    path('load_audios/', csrf_exempt(views.load_audios)),
 ]

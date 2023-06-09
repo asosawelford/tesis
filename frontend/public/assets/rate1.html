@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consigna</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="/css/listen1.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    #container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .likert {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body class="pt-5">
+  <h1 class="text-center">Escuchá el audio y calificá la naturalidad de la voz.</h1>
+  <div id="container">
+      <ul style="text-align: left;">
+        <u><strong> Puntuación --- Naturalidad de la voz </strong></u>
+        <li>5 --- Completamente natural</li>
+        <li>4 --- Bastante natural</li>
+        <li>3 --- Natural y antinatural en partes iguales</li>
+        <li>2 --- Bastante antinatural</li>
+        <li>1 --- Completamente antinatural</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="container">
+    <div id="player-container">
+      <div id="player">
+        <audio id="audio"></audio>
+        <div id="controls">
+          <button id="play-pause" class="btn btn-primary rounded-circle">
+            <i id="play-icon" class="fas fa-play"></i>
+            <i id="pause-icon" class="fas fa-pause"></i>
+          </button>
+          <div id="progress-bar-container">
+            <div id="progress-bar-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form id="rate1" autocomplete="off">
+      <div class="likert">
+        <label><input id="rate1" name="rate1" type="radio" value="1" required/><span>1</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="2" required/><span>2</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="3" required/><span>3</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="4" required/><span>4</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="5" required/><span>5</span></label>
+      </div>
+    </form>
+  </div>
+  <br>  
+  <div class="text-center">
+    <button class="btn btn-success rounded-pill" style="width: 130px; height: 65px; font-size:20px; background-color: #4CAF50;" id="nextButton">Siguiente</button>
+  </div>
+<script src="/js/rate1.js" type="module"></script>
+<script src="/js/cookies.js" type="module"></script>
+</body>
+</html>

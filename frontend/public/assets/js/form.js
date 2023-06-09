@@ -1,15 +1,11 @@
 const form = document.getElementById("form");
-import { getCookie } from "./cookies.js";
 import { url } from "./config.js";
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(form);
-    //console.log([...data]);
-
     // Convert formData to JSON format
     const object = {};
-    object['id_participant'] = getCookie('id_participant');
     formData.forEach(function(value, key){
         object[key] = value;
     });

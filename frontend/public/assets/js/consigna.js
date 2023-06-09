@@ -38,5 +38,5 @@ audioElement.addEventListener('timeupdate', () => {
 });
 
 document.getElementById("nextButton").onclick = function () {
-    location.href = "listen1.html";
+    location.href = "rate1.html";
 };
