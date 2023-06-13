@@ -21,18 +21,21 @@ def receive_form(request):
     body = json.loads(body_unicode)
 
     # parse form data
-    id_participant = 1
     age = body['age']
     sex = body['sex']
-    country = body['country']
+    if body['country'] != '' :
+        country = body['country']
+    else:
+        country = 'NA'
     if body['province'] != '' :
         province = body['province']
     else:
         province = 'NA'
     familiaridad = body['familiaridad']
     auriculares = body['auris']
+    userID = body.get('userID', '')
 
-    print(id_participant, age, sex, country, province, familiaridad, auriculares)
+    print(userID, age, sex, country, province, familiaridad, auriculares)
     json.dumps({})
     
         # Open the CSV file in append mode
@@ -40,7 +43,7 @@ def receive_form(request):
         writer = csv.writer(file)
 
         # Write the variables to the CSV file
-        writer.writerow([age, sex, country, province, familiaridad, auriculares])
+        writer.writerow([userID, age, sex, country, province, familiaridad, auriculares])
     
     
     return HttpResponse( json.dumps({}), status=200)
@@ -80,16 +83,17 @@ def receive_rate(request):
     """
     body_unicode = request.body.decode('utf-8')
     body = json.loads(body_unicode)
-    rate1fp = body['rate1fp'][30:]
-    rate2fp = body['rate2fp'][30:]
-    rate3fp = body['rate3fp'][30:]
-    rate4fp = body['rate4fp'][30:]
-    rate5fp = body['rate5fp'][30:]
-    rate1 = body['rate1']
-    rate2 = body['rate2']
-    rate3 = body['rate3']
-    rate4 = body['rate4']
-    rate5 = body['rate5']
+    rate1fp = body.get('rate1fp', '')[30:]
+    rate2fp = body.get('rate2fp', '')[30:]
+    rate3fp = body.get('rate3fp', '')[30:]
+    rate4fp = body.get('rate4fp', '')[30:]
+    rate5fp = body.get('rate5fp', '')[30:]
+    rate1 = body.get('rate1', '')
+    rate2 = body.get('rate2', '')
+    rate3 = body.get('rate3', '')
+    rate4 = body.get('rate4', '')
+    rate5 = body.get('rate5', '')
+    userID = body.get('userID', '')
     print(rate1)
 
     json.dumps({})
@@ -99,15 +103,30 @@ def receive_rate(request):
         writer = csv.writer(file)
 
         # Write the variables to the CSV file
-        writer.writerow([rate1fp, rate1])
-        writer.writerow([rate2fp, rate2])
-        writer.writerow([rate3fp, rate3])
-        writer.writerow([rate4fp, rate4])
-        writer.writerow([rate5fp, rate5])
+        writer.writerow([userID, rate1fp, rate1])
+        writer.writerow([userID, rate2fp, rate2])
+        writer.writerow([userID, rate3fp, rate3])
+        writer.writerow([userID, rate4fp, rate4])
+        writer.writerow([userID, rate5fp, rate5])
     
     return HttpResponse( json.dumps({}), status=200)
 
+def receive_email(request):
+    """
+    Receives stimulus rate data from frontend and appends it to results.csv.
+    """
+    body_unicode = request.body.decode('utf-8')
+    body = json.loads(body_unicode)
+    userID = body.get('userID', '')
+    email = body.get('email', '')
 
+    with open('emails.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+
+        # Write the variables to the CSV file
+        writer.writerow([userID, email])
+        
+    return HttpResponse( json.dumps({}), status=200)
 # #create an empty set to store the paths of the audios that have been chosen
 # chosen_paths = set()
 # #save it with pickle

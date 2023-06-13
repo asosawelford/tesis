@@ -31,14 +31,14 @@
 <body class="pt-5">
   <div class="container">
     <div class="centered-element">
-      <h1 class="text-center">¡Gracias por tu interés en participar en este estudio académico! 🎓 </h1><br>
-      <h2 class="text-center">En el mismo vas a tener que calificar audios de distintos tipos de voces, de acuerdo a una escala que te voy a presentar en breve. La duración del test es de aproximadamente 8 minutos.  Al completarlo, podes elegir participar en un sorteo. </h2><br>
+      <h1 class="text-center">¡Gracias por participar en este estudio académico! 🎓 </h1><br>
+      <h2 class="text-center">Vas a tener que calificar audios de distintos tipos de voces, de acuerdo a una escala que te voy a presentar en breve. La duración del test es de aproximadamente 8 minutos.  Respondiendo todas las preguntas podes participar de un sorteo. </h2><br>
       <h3 class="text-center">Por favor, antes de comenzar: </h3><br>
       
       <ul>
-        <li>Te pedimos por favor que intentes <strong> reducir el ruido a tu alrededor </strong> para poder realizar el test de manera más cómoda 🙉</span></li>
-        <li>Además, para obtener los mejores resultados, te recomendamos que <strong> realices el test utilizando auriculares 🎧 y en una computadora de escritorio o laptop</strong> 💻</li>
-        <li>Es importante destacar que los audios podrán ser <strong> re-escuchados </strong> y no hay límite de tiempo para completar este test 🕓</li>
+        <li>Intenta <strong> reducir el ruido a tu alrededor </strong> para poder realizar el test de manera más cómoda 🙉</span></li>
+        <li>Te recomendamos que <strong> realices el test utilizando auriculares 🎧 y en una computadora de escritorio o laptop</strong> 💻</li>
+        <li><strong>Podes escuchar cada audio todas las veces que quieras </strong> y no hay límite de tiempo para completar este test 🕓</li>
       </ul>
       
       <div class="text-center">
@@ -46,6 +46,32 @@
       </div>
     </div>
   </div>
+  <script>
+    // Generate a unique UserID
+    function generateUserID() {
+      return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    }
+
+    // Set the UserID as a cookie
+    function setsCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Handle button click event
+    document.getElementById("nextButton").addEventListener("click", function() {
+      var userID = generateUserID(); // Generate a unique UserID
+      setsCookie("userID", userID, 365); // Set the UserID as a cookie with a one-year expiration
+      console.log("userID: " + userID); // Log the UserID to the console
+      // Add any additional logic or redirect to the next page if needed
+      
+    });
+  </script>
   <script src="/js/index.js"></script>
 </body>
 </html>

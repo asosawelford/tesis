@@ -1,4 +1,5 @@
 import { getCookie } from "./cookies.js";
+import { setCookie } from "./cookies.js";
 import { url } from "./config.js";
 
 const audio = document.getElementById("audio");
@@ -190,6 +191,8 @@ document.getElementById("nextButton").onclick = function () {
       object[key.concat('fp')] = audio5.src;
       object[key] = value;
   });
+  //get the UserID cookie
+  object['userID'] = getCookie("userID");
 
   const formJSON = JSON.stringify(object);
   console.log(formJSON);
@@ -208,17 +211,24 @@ document.getElementById("nextButton").onclick = function () {
       return result;
   }
 
+  
   query(formJSON).then((response) => {
-    response.json().then(body => console.log(body)|| body)
-    .then(body => window.location.href = "rate1.html");
+    response.json().then(body => console.log(body)|| body);
   });
+
+  // Increase the iteration count by 1
+  const iterationCount = parseInt(getCookie("iterationCount") || "1");
+  setCookie("iterationCount", (iterationCount + 1).toString(), 1); // Set the cookie for 1 day
+  console.log(iterationCount);
+  if (iterationCount < 10) {
+    // Redirect the user to the same page
+    window.location.href = "rate1.html";
+  } else {
+    // Redirect the user to the "finished" page and reset the iteration count
+    setCookie("iterationCount", "1  ", 2);
+    window.location.href = "finished.html";
+  }
 };
-
-
-
-
-
-
 
 const extractPath = (str) => {
   const startIndex = str.indexOf('stimuli');
@@ -249,4 +259,7 @@ async function loadAudios() {
 }
 
 window.onload = loadAudios;
+const iterationCount = parseInt(getCookie("iterationCount") || "1");
+console.log(iterationCount);
 console.log("Audios loaded");
+

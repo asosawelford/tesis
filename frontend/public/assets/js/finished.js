@@ -17,7 +17,7 @@ form.addEventListener('submit', function (e) {
 
     async function query(form_data) {
         const response = await fetch(
-            url + "/tts_sorter/receive_form/",
+            url + "/tts_sorter/receive_email/",
             {
                 headers: new Headers({ 'Content-type': 'application/json' }),
                 method: "POST",
@@ -33,7 +33,7 @@ form.addEventListener('submit', function (e) {
         //console.log(JSON.stringify(response));
         //console.log(response.json());
         response.json().then(body => console.log(body)|| body)
-        .then(body => window.location.href = "start.html");
+        .then(body => window.location.href = "end.html");
     });
 
 });

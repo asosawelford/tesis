@@ -13,27 +13,31 @@
     #container {
       display: flex;
       flex-direction: row;
+      justify-content: left;
     }
 
     .likert {
       display: flex;
       justify-content: center;
     }
+    
+    #progress-barbig {
+  background-color: #da0d0d;
+  height: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
   </style>
 </head>
 
 <body class="pt-5">
-  <h3 class="text-center">Escuchá el audio y calificá la naturalidad de la voz.</h3>
-  <div id="container">
-      <ul style="text-align: left;">
-        <li>5 --- Completamente natural</li>
-        <li>4 --- Bastante natural</li>
-        <li>3 --- Natural y antinatural en partes iguales</li>
-        <li>2 --- Bastante antinatural</li>
-        <li>1 --- Completamente antinatural</li>
-      </ul>
-    </div>
-  </div>
+  <div id="progress-barbig"></div>
+  <h3 class="text-center">Escuchá el audio y calificá la naturalidad de la voz.</h3><br>
   
   <div id="container">
     <div id="player-container">
@@ -52,11 +56,11 @@
     </div>
     <form id="rate1" autocomplete="off">
       <div class="likert">
-        <label><input id="rate1" name="rate1" type="radio" value="1" required/><span>1</span></label>
-        <label><input id="rate1" name="rate1" type="radio" value="2" required/><span>2</span></label>
-        <label><input id="rate1" name="rate1" type="radio" value="3" required/><span>3</span></label>
-        <label><input id="rate1" name="rate1" type="radio" value="4" required/><span>4</span></label>
-        <label><input id="rate1" name="rate1" type="radio" value="5" required/><span>5</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="1" required/><span>Completamente artificial</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="2" required/><span>Bastante artificial</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="3" required/><span>Intermediamente natural/artifical</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="4" required/><span>Bastante natural</span></label>
+        <label><input id="rate1" name="rate1" type="radio" value="5" required/><span>Completamente natural</span></label>
       </div>
     </form>
   </div>
@@ -78,11 +82,11 @@
     </div>
     <form id="rate2" autocomplete="off">
       <div class="likert">
-        <label><input id="rate2" name="rate2" type="radio" value="1" required/><span>1</span></label>
-        <label><input id="rate2" name="rate2" type="radio" value="2" required/><span>2</span></label>
-        <label><input id="rate2" name="rate2" type="radio" value="3" required/><span>3</span></label>
-        <label><input id="rate2" name="rate2" type="radio" value="4" required/><span>4</span></label>
-        <label><input id="rate2" name="rate2" type="radio" value="5" required/><span>5</span></label>
+        <label><input id="rate2" name="rate2" type="radio" value="1" required/><span>Completamente artificial</span></label>
+        <label><input id="rate2" name="rate2" type="radio" value="2" required/><span>Bastante artificial</span></label>
+        <label><input id="rate2" name="rate2" type="radio" value="3" required/><span>Intermediamente natural/artificial</span></label>
+        <label><input id="rate2" name="rate2" type="radio" value="4" required/><span>Bastante natural</span></label>
+        <label><input id="rate2" name="rate2" type="radio" value="5" required/><span>Completamente natural</span></label>
       </div>
     </form>
   </div>
@@ -104,11 +108,11 @@
     </div>
     <form id="rate3" autocomplete="off">
       <div class="likert">
-        <label><input id="rate3" name="rate3" type="radio" value="1" required/><span>1</span></label>
-        <label><input id="rate3" name="rate3" type="radio" value="2" required/><span>2</span></label>
-        <label><input id="rate3" name="rate3" type="radio" value="3" required/><span>3</span></label>
-        <label><input id="rate3" name="rate3" type="radio" value="4" required/><span>4</span></label>
-        <label><input id="rate3" name="rate3" type="radio" value="5" required/><span>5</span></label>
+        <label><input id="rate3" name="rate3" type="radio" value="1" required/><span>Completamente artificial</span></label>
+        <label><input id="rate3" name="rate3" type="radio" value="2" required/><span>Bastante artifical</span></label>
+        <label><input id="rate3" name="rate3" type="radio" value="3" required/><span>Intermediamente natural/artifical</span></label>
+        <label><input id="rate3" name="rate3" type="radio" value="4" required/><span>Bastante natural</span></label>
+        <label><input id="rate3" name="rate3" type="radio" value="5" required/><span>Completamente natural</span></label>
       </div>
     </form>
   </div>
@@ -130,11 +134,11 @@
     </div>
     <form id="rate4" autocomplete="off">
       <div class="likert">
-        <label><input id="rate4" name="rate4" type="radio" value="1" required/><span>1</span></label>
-        <label><input id="rate4" name="rate4" type="radio" value="2" required/><span>2</span></label>
-        <label><input id="rate4" name="rate4" type="radio" value="3" required/><span>3</span></label>
-        <label><input id="rate4" name="rate4" type="radio" value="4" required/><span>4</span></label>
-        <label><input id="rate4" name="rate4" type="radio" value="5" required/><span>5</span></label>
+        <label><input id="rate4" name="rate4" type="radio" value="1" required/><span>Completamente artificial</span></label>
+        <label><input id="rate4" name="rate4" type="radio" value="2" required/><span>Bastante artifical</span></label>
+        <label><input id="rate4" name="rate4" type="radio" value="3" required/><span>Intermediamente natural/artificial</span></label>
+        <label><input id="rate4" name="rate4" type="radio" value="4" required/><span>Bastante natural</span></label>
+        <label><input id="rate4" name="rate4" type="radio" value="5" required/><span>Completamente natural</span></label>
       </div>
     </form>
   </div>
@@ -156,11 +160,11 @@
     </div>
     <form id="rate5" autocomplete="off">
       <div class="likert">
-        <label><input id="rate5" name="rate5" type="radio" value="1" required/><span>1</span></label>
-        <label><input id="rate5" name="rate5" type="radio" value="2" required/><span>2</span></label>
-        <label><input id="rate5" name="rate5" type="radio" value="3" required/><span>3</span></label>
-        <label><input id="rate5" name="rate5" type="radio" value="4" required/><span>4</span></label>
-        <label><input id="rate5" name="rate5" type="radio" value="5" required/><span>5</span></label>
+        <label><input id="rate5" name="rate5" type="radio" value="1" required/><span>Completamente artifical</span></label>
+        <label><input id="rate5" name="rate5" type="radio" value="2" required/><span>Bastante artifical</span></label>
+        <label><input id="rate5" name="rate5" type="radio" value="3" required/><span>Intermediamente natural/artificial</span></label>
+        <label><input id="rate5" name="rate5" type="radio" value="4" required/><span>Bastante natural</span></label>
+        <label><input id="rate5" name="rate5" type="radio" value="5" required/><span>Completamente natural</span></label>
       </div>
     </form>
   </div>
@@ -168,6 +172,33 @@
   <div class="text-center">
     <button class="btn btn-success rounded-pill" style="width: 130px; height: 65px; font-size:20px; background-color: #4CAF50;" id="nextButton">Siguiente</button>
   </div>
+  <script>
+    // Update the progress bar width based on completion percentage
+    function updateProgressBar() {
+    // Fetch the value of the "iterationCount" cookie
+    const iterationCount = getsCookie("iterationCount");
+
+    // Convert the cookie value to a number and multiply by 10
+    const percentage = parseInt(iterationCount) * 10;
+
+    // Set the width of the progress bar
+    const progressBar = document.getElementById('progress-barbig');
+    progressBar.style.width = percentage + '%';
+  }
+
+  // Function to get the value of a cookie by its name
+  function getsCookie(name) {
+    const cookieValue = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+    return cookieValue ? cookieValue.pop() : '';
+}
+
+    // Call the updateProgressBar function with your desired completion percentage
+    updateProgressBar(); // Example: 10% completion
+
+    // You can update the progress bar with different percentages at different points in your code
+    // For example, when the user completes a section, you can update it again
+    // updateProgressBar(20); // Example: 20% completion
+  </script>
 <script src="/js/rate1.js" type="module"></script>
 <script src="/js/cookies.js" type="module"></script>
 </body>

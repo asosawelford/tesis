@@ -53,7 +53,7 @@
         <div class="likert">
             <label><input id="sex" name="sex" type="radio" value="F" required/><span>Femenino</span></label>
             <label><input id="sex" name="sex" type="radio" value="M" required/><span>Masculino</span></label>
-            <label><input id="sex" name="sex" type="radio" value="X" required/><span>Prefiero no decir</span></label>
+            <label><input id="sex" name="sex" type="radio" value="X" required/><span>Otro/Prefiero no decir</span></label>
         </div><br>
 
         <select id="country" name="country" onchange="showProvinces()">
@@ -127,17 +127,15 @@
 
         <p><br>¿Qué grado de familiaridad consideras que tienes con los asistentes virtuales? (ej. Siri, Alexa, OK Google, Cortana)</p>
         <div class="likert">
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="0" required/><span>Nula - No sé lo que son</span></label>
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="1" required/><span>Poca</span></label>
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="2" required/><span>Moderada</span></label>
-            <label><input id="familiaridad" name="familiaridad" type="radio" value="3" required/><span>Mucha - Los uso a diario</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="1" required/><span>Nula</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="2" required/><span>Poca</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="3" required/><span>Intermedia</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="4" required/><span>Moderada</span></label>
+            <label><input id="familiaridad" name="familiaridad" type="radio" value="5" required/><span>Mucha</span></label>
         </div><br>
 
         <label for="auris">Si lo sabes, ingresa el modelo o marca de tus auriculares:</label>
         <input type="string" id="auris" name="auris" placeholder="" style="width: 300px; height: 20px;"><br>
-
-        <input type="checkbox" id="consent" name="consent" required>
-        <label for="consent">Doy mi consentimiento para que mis datos se recopilen y utilicen bajo estas condiciones.</label><br>
 
         <input type="submit" id="sendButton" value="Siguiente">
     </form>

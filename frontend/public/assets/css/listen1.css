@@ -188,8 +188,8 @@
   }
 
   #progress-bar {
-    width: 10%;
-    height: 20px;
+    width: 5%;
+    height: 10px;
     background-color: #ddd;
     border-radius: 1px;
     overflow: hidden;
@@ -245,32 +245,32 @@
   }
   
   #progress-bar-container {
-    width: 200px;
+    width: 100px;
     height: 10px;
     background-color: #ccc;
     margin-left: 10px;
   }
   
   #progress-bar-container2 {
-    width: 200px;
+    width: 100px;
     height: 10px;
     background-color: #ccc;
     margin-left: 10px;
   }
   #progress-bar-container3 {
-    width: 200px;
+    width: 100px;
     height: 10px;
     background-color: #ccc;
     margin-left: 10px;
   }
   #progress-bar-container4 {
-    width: 200px;
+    width: 100px;
     height: 10px;
     background-color: #ccc;
     margin-left: 10px;
   }
   #progress-bar-container5 {
-    width: 200px;
+    width: 100px;
     height: 10px;
     background-color: #ccc;
     margin-left: 10px;
@@ -345,7 +345,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     background: #faf9f9;
     transition: background .2s ease-in-out;
   }
@@ -414,7 +414,7 @@
   
   /* Added styles for the progress bar */
   #progress-bar {
-    width: 10%;
+    width: 5%;
     height: 12px;
     background-color: #ccc;
   }
