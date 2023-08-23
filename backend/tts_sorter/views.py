@@ -127,8 +127,4 @@ def receive_email(request):
         writer.writerow([userID, email])
         
     return HttpResponse( json.dumps({}), status=200)
-# #create an empty set to store the paths of the audios that have been chosen
-# chosen_paths = set()
-# #save it with pickle
-# with open(config.base_dir + "\\" + 'chosen_paths.pickle', 'wb') as handle:
-#     pickle.dump(chosen_paths, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
