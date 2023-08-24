@@ -3,9 +3,10 @@ import json
 from django.http import HttpResponse
 import csv
 import pickle
-import config
+from config import base_dir
 from utilities import shuffle_filepaths
 import random
+import os
 
 
 # Create your views here.
@@ -51,24 +52,29 @@ def receive_form(request):
 def load_audios(request):
     new_paths = {}
 
-    #iterate over each category of stimulus
+   #iterate over each category of stimulus
     for letter in "ABCDE":
         #open the pickle file with the filepaths
-        with open(config.base_dir + "\\" + letter + '.pickle', 'rb') as handle:
+        path = os.path.join(base_dir, letter + '.pickle')
+        with open(path, 'rb') as handle:
             filepaths = pickle.load(handle)
         try:
             new_paths[letter] = filepaths.pop() # Take the last element from the list
             # save filepaths as pickle file
-            with open(config.base_dir + "\\" + letter + '.pickle', 'wb') as handle:
+            path = os.path.join(base_dir, letter + '.pickle')
+            with open(path, 'wb') as handle:
                 pickle.dump(filepaths, handle, protocol=pickle.HIGHEST_PROTOCOL)
         except IndexError:
             shuffle_filepaths(letter=letter)
-            with open(config.base_dir + "\\" + letter + '.pickle', 'rb') as handle:
+            path = os.path.join(base_dir, letter + '.pickle')
+            with open(path, 'rb') as handle:
                 filepaths = pickle.load(handle)
             new_paths[letter] = filepaths.pop() # Take the last element from the list
             # save filepaths as pickle file
-            with open(config.base_dir + "\\" + letter + '.pickle', 'wb') as handle:
+            path = os.path.join(base_dir, letter + '.pickle')
+            with open(path, 'wb') as handle:
                 pickle.dump(filepaths, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    
     print(new_paths)
     values = list(new_paths.values())
     random.shuffle(values)
