@@ -1,0 +1,10 @@
+DC_TTS_Camila_Godoy,Fastpitch_ar,Polly_Penelope,neruas_f,open srl es_ar_female_1
+DC_TTS_Celeste_Arretche,Fastpitch_esp,PollyN_Fiona,neruas_m,open srl es_ar_female_2
+Fastpitch_MultiSpeaker,Polly_enrique_GL,PollyN_Pedro,speecheloAI_Leticia,es_ar_librivox
+Loquendo_f,tiktok_m1,Speechelo Fiore,speecheloAI_Olimpia,open srl es_ar_male_1
+tts_dewhitte,tiktok_m2,Speechelo Albano,es-BO-MarceloNeural,open srl es_ar_male_2
+DC_TTS_LucasDiaz,Polly Miguel,Speechelo olimpia,es-ES-AlvaroNeural,azure_AR-Elena
+DC_TTS_NaomiBent,Fastpitch_esp2,Polly conchita,es-ES-ElviraNeural,azure_AR-Tomas
+DC_TTS_MaxSignorini,VTLPes-BO-MarceloNeural,Polly Enrique,open srl es_ar_male_1 GL,es-BO-SofiaNeural
+DC_TTS_Miguel_Grassi,VTLPes-ES-ElviraNeural,Polly Lupe,Speechelo pricila,open srl es_ar_male_3
+DC_TTS_SanMig,VTLPes-AR-TomasElena,Polly Mia,speechelo lalita,es-MX-JorgeNeural

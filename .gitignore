@@ -162,4 +162,8 @@ cython_debug/
 # Testing folders
 tests
 .vscode
-frontend/public/assets/stimuli/
+frontend/public/assets/stimuli/A/
+frontend/public/assets/stimuli/B/
+frontend/public/assets/stimuli/C/
+frontend/public/assets/stimuli/D/
+frontend/public/assets/stimuli/E/
