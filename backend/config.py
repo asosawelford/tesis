@@ -4,3 +4,6 @@ import os
 # base_dir = r"C:\Users\aleja\tesis\frontend\public\assets\stimuli"
 base_dir = os.path.join('C:', os.sep, 'Users', 'aleja', 'tesis',
                          'frontend', 'public', 'assets', 'stimuli')
+# linux base dir
+base_dir = os.path.join(os.sep,'home', 'udesa_ubuntu', 'tesis', 'frontend', 'public',
+                        'assets', 'stimuli')
