@@ -7,3 +7,6 @@ base_dir = os.path.join('C:', os.sep, 'Users', 'aleja', 'tesis',
 # linux base dir
 base_dir = os.path.join(os.sep,'home', 'udesa_ubuntu', 'tesis', 'frontend', 'public',
                         'assets', 'stimuli')
+# windows2019server base dir
+base_dir = os.path.join('C:', os.sep, 'Users', 'asosawelford', 'tesis',
+                         'frontend', 'public', 'assets', 'stimuli')
