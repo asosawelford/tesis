@@ -16,7 +16,6 @@ i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/fr
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00267144431.wav,4.0,E2,open_srl_es_ar_female_2,F,ARG,4.647430419921875,NISQA_TTS_v1
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_01519113277.wav,4.0,E2,open_srl_es_ar_female_2,F,ARG,3.0304884910583496,NISQA_TTS_v1
 wqc6g1y755ulfhnkoksei,33,M,AR,Buenos Aires,3,Shure 48,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_02031088808.wav,4.0,E2,open_srl_es_ar_female_2,F,ARG,4.480491638183594,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00848604729.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.681482315063477,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00627937971.wav,3.0,E2,open_srl_es_ar_female_2,F,ARG,4.56888484954834,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_01414016169.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.753175258636475,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_01060090779.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.92276668548584,NISQA_TTS_v1
@@ -277,7 +276,6 @@ bkaa9b0qt4ogrmp1inpjol,42,F,AR,Buenos Aires,4,genius b�sico,/home/udesa_ubuntu
 i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_38.wav,1.0,D9,Speechelo_pricila,F,CAST,3.0759363174438477,NISQA_TTS_v1
 4kkajwqbxbr4zfc0eys6a3,53,M,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM5,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_70.wav,2.0,D9,Speechelo_pricila,F,CAST,2.766017198562622,NISQA_TTS_v1
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_36.wav,1.0,D9,Speechelo_pricila,F,CAST,3.002997875213623,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_81.wav,3.0,D9,Speechelo_pricila,F,CAST,2.7281494140625,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_49.wav,3.0,D9,Speechelo_pricila,F,CAST,3.1702044010162354,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_87.wav,4.0,D9,Speechelo_pricila,F,CAST,3.2800395488739014,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D9/priscilla_33.wav,3.0,D9,Speechelo_pricila,F,CAST,2.8933985233306885,NISQA_TTS_v1
@@ -926,7 +924,6 @@ ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_60.wav,1.0,A5,tts_dewhitte,F,ES,2.680529832839966,NISQA_TTS_v1
 93u2ldy3lalf5sc8spao9,28,M,AR,Ciudad Aut�noma de Buenos Aires,2,SONY WH-700,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_85.wav,1.0,A5,tts_dewhitte,F,ES,4.324910640716553,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_8.wav,1.0,A5,tts_dewhitte,F,ES,4.308234691619873,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_19.wav,1.0,A5,tts_dewhitte,F,ES,4.180556774139404,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_14.wav,1.0,A5,tts_dewhitte,F,ES,3.89961838722229,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_56.wav,2.0,A5,tts_dewhitte,F,ES,4.49350118637085,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A5/tts_dev_thomas_81.wav,1.0,A5,tts_dewhitte,F,ES,4.424140930175781,NISQA_TTS_v1
@@ -1022,7 +1019,6 @@ i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/fr
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_02062382625.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.592749118804932,NISQA_TTS_v1
 ztwx6tnel7ogegc0h9hjqr,27,F,AR,Buenos Aires,2,Philips ,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_01846467604.wav,4.0,E4,open_srl_es_ar_male_1,M,ARG,4.471648216247559,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_00019615132.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.561611652374268,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_00640197534.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.702036380767822,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_00795832766.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.65409517288208,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_00275140832.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.662323951721191,NISQA_TTS_v1
 ee4i8isvlpyncgz1odqs,27,F,AR,Ciudad Aut�noma de Buenos Aires,2,sennheiser,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/E/E4/arm_08784_00421462788.wav,5.0,E4,open_srl_es_ar_male_1,M,ARG,4.517059803009033,NISQA_TTS_v1
@@ -2116,8 +2112,6 @@ i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/fr
 wqc6g1y755ulfhnkoksei,33,M,AR,Buenos Aires,3,Shure 48,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona2_58.wav,2.0,C2,PollyN_Fiona,F,CAST,3.736485004425049,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona_16.wav,1.0,C2,PollyN_Fiona,F,CAST,3.691460609436035,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona_44.wav,1.0,C2,PollyN_Fiona,F,CAST,3.6185991764068604,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona2_65.wav,3.0,C2,PollyN_Fiona,F,CAST,3.0589945316314697,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona2_86.wav,4.0,C2,PollyN_Fiona,F,CAST,3.1925723552703857,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona2_87.wav,2.0,C2,PollyN_Fiona,F,CAST,3.078056573867798,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona_36.wav,3.0,C2,PollyN_Fiona,F,CAST,3.3939690589904785,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/C/C2/fiona_37.wav,3.0,C2,PollyN_Fiona,F,CAST,3.284745931625366,NISQA_TTS_v1
@@ -2216,7 +2210,6 @@ wqc6g1y755ulfhnkoksei,33,M,AR,Buenos Aires,3,Shure 48,/home/udesa_ubuntu/tesis/f
 93u2ldy3lalf5sc8spao9,28,M,AR,Ciudad Aut�noma de Buenos Aires,2,SONY WH-700,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural75.wav,2.0,D5,es-BO-MarceloNeural,M,BO,3.6134774684906006,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural43.wav,2.0,D5,es-BO-MarceloNeural,M,BO,3.508427143096924,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural10.wav,3.0,D5,es-BO-MarceloNeural,M,BO,3.1515064239501953,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural25.wav,2.0,D5,es-BO-MarceloNeural,M,BO,3.831371545791626,NISQA_TTS_v1
 ee4i8isvlpyncgz1odqs,27,F,AR,Ciudad Aut�noma de Buenos Aires,2,sennheiser,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural92.wav,4.0,D5,es-BO-MarceloNeural,M,BO,3.1621572971343994,NISQA_TTS_v1
 qs8j8yj1w5ilprwml3zr,27,M,AR,Ciudad Aut�noma de Buenos Aires,4,redragon,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural16.wav,1.0,D5,es-BO-MarceloNeural,M,BO,3.2824108600616455,NISQA_TTS_v1
 k4yipc557y1uklyxj98p4,26,M,AR,Buenos Aires,5,samsung in ear ale,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/D/D5/es-BO-MarceloNeural80.wav,3.0,D5,es-BO-MarceloNeural,M,BO,3.59051513671875,NISQA_TTS_v1
@@ -2647,7 +2640,6 @@ i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/fr
 i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique2_90.wav_GL.wav,1.0,B3,Polly_enrique_GL,M,ES,3.4736101627349854,NISQA_TTS_v1
 4kkajwqbxbr4zfc0eys6a3,53,M,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM5,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique_15.wav_GL.wav,3.0,B3,Polly_enrique_GL,M,ES,3.7193775177001953,NISQA_TTS_v1
 nlz815o2yjmlk4nbngwm2c,29,M,AR,Buenos Aires,3,Beyerdynamic dt 990 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique_11.wav_GL.wav,1.0,B3,Polly_enrique_GL,M,ES,3.792006492614746,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique2_69.wav_GL.wav,2.0,B3,Polly_enrique_GL,M,ES,3.3088176250457764,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique_0.wav_GL.wav,1.0,B3,Polly_enrique_GL,M,ES,2.967095136642456,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique_40.wav_GL.wav,2.0,B3,Polly_enrique_GL,M,ES,4.27146053314209,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B3/enrique2_92.wav_GL.wav,2.0,B3,Polly_enrique_GL,M,ES,2.9660537242889404,NISQA_TTS_v1
@@ -2731,7 +2723,6 @@ i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/fr
 wqc6g1y755ulfhnkoksei,33,M,AR,Buenos Aires,3,Shure 48,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio20.wav,2.0,A3,Fastpitch_MultiSpeaker,M,ARG,2.4409899711608887,NISQA_TTS_v1
 wqc6g1y755ulfhnkoksei,33,M,AR,Buenos Aires,3,Shure 48,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio73.wav,2.0,A3,Fastpitch_MultiSpeaker,M,ARG,2.2150728702545166,NISQA_TTS_v1
 93u2ldy3lalf5sc8spao9,28,M,AR,Ciudad Aut�noma de Buenos Aires,2,SONY WH-700,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio133.wav,1.0,A3,Fastpitch_MultiSpeaker,M,ARG,2.9371225833892822,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio131.wav,1.0,A3,Fastpitch_MultiSpeaker,M,ARG,2.574615478515625,NISQA_TTS_v1
 c6o6iafmvykjd72hc517n,26,F,AR,Ciudad Aut�noma de Buenos Aires,4,Sony WH-1000XM4,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio115.wav,2.0,A3,Fastpitch_MultiSpeaker,M,ARG,4.319178581237793,NISQA_TTS_v1
 iboag27p95cimh20dsteol,26,M,AR,Buenos Aires,5,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio194.wav,1.0,A3,Fastpitch_MultiSpeaker,M,ARG,4.741339683532715,NISQA_TTS_v1
 7nx1cmjz8nin1rn9la865,26,M,AR,Buenos Aires,5,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/A/A3/audio45.wav,1.0,A3,Fastpitch_MultiSpeaker,M,ARG,1.9703742265701294,NISQA_TTS_v1
@@ -3311,7 +3302,6 @@ t0gpbakhue89ui683yiltc,26,M,AR,Ciudad Autónoma de Buenos Aires,3,,/home/udesa_u
 ymxfxn696we9rp1tnnub3f,26,P,AR,Buenos Aires,5,samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/7.wav,2.0,B4,tiktok_m1,M,ES,3.5100369453430176,NISQA_TTS_v1
 36w18huenqzembkxhb4b67,28,M,AR,Ciudad Aut�noma de Buenos Aires,2,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/8.wav,2.0,B4,tiktok_m1,M,ES,3.3850290775299072,NISQA_TTS_v1
 i035g56vlm5ayg6ke1amp,25,F,AR,Buenos Aires,3,Samsung,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/6.wav,1.0,B4,tiktok_m1,M,ES,3.934931516647339,NISQA_TTS_v1
-qutvhu57mnvi6fizy1t3,2,F,CO,,1,test,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/1.wav,3.0,B4,tiktok_m1,M,ES,3.9745843410491943,NISQA_TTS_v1
 91107h7ny06qnvf2wsv1p,27,M,AR,Ciudad Aut�noma de Buenos Aires,2,sennheiser hd 280 pro,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/10.wav,1.0,B4,tiktok_m1,M,ES,3.753924608230591,NISQA_TTS_v1
 n2fnmi79nv9jv5cip5dm,25,F,AR,Buenos Aires,1,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/5.wav,2.0,B4,tiktok_m1,M,ES,3.77327036857605,NISQA_TTS_v1
 k9r8wtrwq8cdtu5kbuy3ye,26,F,AR,Ciudad Autónoma de Buenos Aires,3,,/home/udesa_ubuntu/tesis/frontend/public/assets/stimuli_norm/B/B4/2.wav,2.0,B4,tiktok_m1,M,ES,3.83272647857666,NISQA_TTS_v1
