@@ -1,0 +1,31 @@
+\section{RESULTADOS Y ANÁLISIS}
+\subsection{Resultados iniciales}
+
+Se presentan los resultados iniciales en la Tabla \ref{tab:resultados}. El RMSE y ρ a nivel de sistema se calcularon para el modelo predictivo propuesto, y para la segunda iteración del software NISQA. En ambos casos, se procesaron y evaluaron audios juzgados bajo 2 condiciones:
+\begin{itemize}
+    \item RMSE y coeficiente de correlación ρ calculado sobre las encuestas realizadas previas a balancear la base de datos (250 ejemplos utilizados en el entrenamiento del modelo propuesto)
+    \item RMSE y coeficiente de correlación ρ calculado sobre las encuestas realizadas posterior a balancear la base de datos (500 ejemplos utilizados en el entrenamiento del modelo propuesto)
+    \item RMSE y coeficiente de correlación ρ calculado sobre las encuestas realizadas posterior a balancear la base de datos (750 ejemplos utilizados en el entrenamiento del modelo propuesto)
+    
+\end{itemize} 
+
+\begin{table}[h]
+\centering
+\caption{Resultados iniciales obtenidos con 15\% de los audios de la base de datos evaluados}
+\label{tab:resultados}
+
+\begin{tabular}{ccccc}
+                                                                                          & \multicolumn{2}{c}{\textbf{Modelo propuesto}} & \multicolumn{2}{c}{\textbf{NISQA V.2}} \\
+                                                                                          & ρ                     & RSME                  & ρ                  & RSME              \\ \hline
+\begin{tabular}[c]{@{}c@{}}Previo a \\ balancear el dataset\end{tabular}                  & 0,32                  & 2,63                  & 0,17               & 3,19              \\ \hline
+\begin{tabular}[c]{@{}c@{}}Posterior a \\ balancear el dataset\end{tabular}               & 0,35                  & 1,63                  & 0,31               & 2,07              \\ \hline
+\begin{tabular}[c]{@{}c@{}}Posterior a balancear \\ el dataset +250 ejemplos\end{tabular} & 0,49                  & 1,21                  & 0,24               & 2,04             
+\end{tabular}
+\end{table}
+
+
+\subsection{Tiempo de procesamiento}
+
+\subsection{Modelo final}
+
+\newpage

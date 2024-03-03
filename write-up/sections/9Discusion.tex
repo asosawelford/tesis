@@ -1,0 +1,16 @@
+\newpage
+\section{DISCUSIÓN DE LOS RESULTADOS}
+(\color{red}\textit{Discusión de los resultados iniciales de la entrega \textbf{Avance 4} del Taller de Tesis.})\color{black}
+
+Los resultados iniciales obtenidos nos permiten inferir ciertas hipótesis que pueden resultar útiles a la hora de continuar el desarrollo del trabajo:
+
+\begin{itemize}
+    \item En primer lugar, como es de esperarse los resultados mejoran al incorporar más ejemplos de entrenamiento. Por ahora, la cantidad de datos recolectados son 10\% de la totalidad que se espera obtener para el entrenamiento del modelo final, por lo que se espera una mejora significativa de las métricas evaluadas en el futuro, simplemente por tener una base de datos más robusta.
+    \item La segunda iteración de los resultados fueron calculados luego de balancear los estímulos de prueba. Es posible que parte de la mejora en el RMSE se deba a este ajuste de la encuesta realizada, por lo que se propone realizar un balanceo adicional antes de liberar la evaluación subjetiva al publico general para obtener el resto de las respuestas necesarias
+    \item Si bien el modelo propuesto supero el desempeño de la red NISQA V.2, esto se debe en parte a que la red NISQA nunca había sido expuesta a audios en el idioma castellano en su entrenamiento. Al mismo tiempo, el modelo propuesto fue entrenado con audios que guardan cierta similitud a los que fueron usados en la evaluación (ambos subconjuntos de la misma base de datos), lo que puede aportar otro factor que beneficie a un modelo predictivo sobre el otro.
+    \item Para futuras comparaciones es importante incluir otros modelos como NISQA V1 y ANIQUE+
+    \item Es posible adoptar variaciones sobre la arquitectura propuesta, para poder refinar el sistema aún más. La mayoría de los cambios significativos son propios de la red neuronal convolucional.
+\end{itemize}
+
+
+\newpage
