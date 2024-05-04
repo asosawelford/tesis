@@ -1,0 +1,5 @@
+participant_id,age,gender_participant,country,province,education,headphone_brand,stimuli,score,stimuli_group,stimuli_service,gender_stimuli,dialect,mos_pred,model
+ymxfxn696we9rp1tnnub3f,26,P,AR,Buenos Aires,5,samsung,/home/aleph/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00913913795.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.201411724090576,NISQA_TTS_v1
+ymxfxn696we9rp1tnnub3f,26,P,AR,Buenos Aires,5,samsung,/home/aleph/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00546762557.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.755947113037109,NISQA_TTS_v1
+9fig36z1cml41m265ckifw,25,M,AR,Buenos Aires,4,Sony,/home/aleph/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00621699750.wav,5.0,E2,open_srl_es_ar_female_2,F,ARG,4.338622093200684,NISQA_TTS_v1
+vj735xlt2yj805wyn5rimq,59,F,AR,Buenos Aires,2,,/home/aleph/tesis/frontend/public/assets/stimuli_norm/E/E2/arf_00610_00912390302.wav,4.0,E2,open_srl_es_ar_female_2,F,ARG,4.223487377166748,NISQA_TTS_v1
