@@ -12,9 +12,9 @@ class DenseMOS(nn.Module):
             nn.Dropout(dropout_prob),  # Dropout with 0.2
         )
 
-        # Second dense layer with 128 neurons, ReLU activation, and dropout
+        # Second dense layer, same design
         self.layer2 = nn.Sequential(
-            nn.Linear(hidden_dim, hidden_dim),  # Another dense transformation
+            nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
             nn.Dropout(dropout_prob),
         )

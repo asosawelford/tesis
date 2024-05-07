@@ -9,7 +9,9 @@ import librosa
 # define function for extracting embeddings
 def wav2vec_embeddings(path_to_csv, model_name):
     """Extracts embeddings from audio files given a specific Wav2Vec2 model.
-    Last hidden state is averaged to get a single embedding per audio file."""
+    Last hidden state is averaged to get a single embedding per audio file.
+    Expects csv file with a column named "stimuli" containing paths to audio files."""
+
     feature_extractor = Wav2Vec2FeatureExtractor.from_pretrained(model_name)
     model = Wav2Vec2Model.from_pretrained(model_name)
     metadata_df = pd.read_csv(path_to_csv)
@@ -26,7 +28,7 @@ def wav2vec_embeddings(path_to_csv, model_name):
         embeddings = embeddings.mean(dim=1)
         embeddings = embeddings.squeeze().detach().numpy()
         metadata_df.at[index, 'embeddings'] = [embeddings]
-          
+
     return metadata_df
 
 def save_embeddings(embeddings_df, path_to_save):
