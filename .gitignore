@@ -173,4 +173,4 @@ NISQA_Corpus.zip
 NISQA_analysis/NISQA_finetuning/stimuli_norm/
 weather/
 database_16k/
-classifier/.classifier/
+classifier/embeddings/
