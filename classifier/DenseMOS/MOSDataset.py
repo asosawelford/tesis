@@ -1,6 +1,5 @@
 """Custom dataset to read embeddings and MOS scores from a CSV"""
-# from numpy import array
-# from numpy import float32
+import os
 import numpy as np
 import pandas as pd
 
@@ -8,27 +7,54 @@ import pandas as pd
 import torch
 from torch.utils.data import Dataset
 
+# Custom dataset to read embeddings and MOS scores from a CSV
 class MOSDataset(Dataset):
-    def __init__(self, csv_file):
+    def __init__(self, csv_file, split):
         # Load the CSV file
         self.data = pd.read_csv(csv_file)
+        self.split = split  # Store the split (train, val, test)
 
+        
     def __len__(self):
         return len(self.data)  # Total number of samples in the dataset
-
+    
     def __getitem__(self, idx):
         # Get the embeddings and MOS scores for the given index
-        embeddings_str = self.data.iloc[idx]['embeddings']
+        file_name = os.path.basename(self.data.iloc[idx]['stimuli'])
+        file_folder = os.path.basename(os.path.dirname(self.data.iloc[idx]['stimuli']))
+
+        embeddings_path = f"/home/aleph/tesis/classifier/embeddings/{self.split}/{file_folder}/{file_name.split('.')[0]}.npy"
+
+        # Check if the embeddings file exists
+        if not os.path.isfile(embeddings_path):
+            raise FileNotFoundError(f"Embeddings file not found at {embeddings_path}")
+
+        embeddings = np.load(embeddings_path)
+
         mos_score = self.data.iloc[idx]['mos']
 
-        # Convert the string of embeddings to a tensor
-        embeddings = np.array(eval(embeddings_str))  # Convert from string to numpy array TODO?
+        # Convert the numpy array of embeddings to a tensor
         embeddings_tensor = torch.tensor(embeddings, dtype=torch.float32)  # Convert to PyTorch tensor
 
-        # Average the embeddings over the sequence dimension (assuming they are 2D arrays)
-        feature_vector = embeddings_tensor.mean(dim=0)  # Average over the time axis
-
+        # drop first layer
+        embeddings_tensor = embeddings_tensor[1:]
+                
         # MOS score should be a single value
         mos_tensor = torch.tensor([mos_score], dtype=torch.float32)  # Convert to tensor
+        
+        return embeddings_tensor, mos_tensor
 
-        return feature_vector, mos_tensor
+# # Create the training DataLoader
+# train_csv_path = "/home/aleph/tesis/classifier/train.csv"
+# train_dataset = MOSDataset(train_csv_path, split='train')
+# train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True, num_workers=2)  # DataLoader with batching and shuffling
+
+# # Create the validation DataLoader
+# val_csv_path = "/home/aleph/tesis/classifier/val.csv"
+# val_dataset = MOSDataset(val_csv_path, split='val')
+# val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False, num_workers=2)
+
+# # Create the testing DataLoader
+# test_csv_path = "/home/aleph/tesis/classifier/test.csv"
+# test_dataset = MOSDataset(test_csv_path, split='test')
+# test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False, num_workers=2) 
