@@ -1,9 +1,23 @@
 import torch
 import torch.nn as nn
 
+
+class WeightedAverage(torch.nn.Module):
+    def __init__(self, num_layers=12):
+        super().__init__()
+        self.weights = torch.nn.Parameter(data=torch.ones((num_layers,)))
+       
+    def forward(self, x):
+        w = torch.nn.functional.softmax(self.weights, dim=0)
+        x_weighted = x*w[None,:,None]
+        return torch.sum(x_weighted, dim=1)
+
 class DenseMOS(nn.Module):
     def __init__(self, input_dim, hidden_dim, dropout_prob):
         super(DenseMOS, self).__init__()
+
+        # add a weighted average layer
+        self.weighted_average = WeightedAverage(num_layers=12)
         
         # First dense layer with 128 neurons, ReLU activation, and dropout
         self.layer1 = nn.Sequential(
