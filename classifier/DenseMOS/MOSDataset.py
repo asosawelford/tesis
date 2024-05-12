@@ -34,14 +34,14 @@ class MOSDataset(Dataset):
         mos_score = self.data.iloc[idx]['mos']
 
         # Convert the numpy array of embeddings to a tensor
-        embeddings_tensor = torch.tensor(embeddings, dtype=torch.float32)  # Convert to PyTorch tensor
+        embeddings_tensor = torch.tensor(embeddings, dtype=torch.float32)
 
         # drop first layer
         embeddings_tensor = embeddings_tensor[1:]
-                
+
         # MOS score should be a single value
         mos_tensor = torch.tensor([mos_score], dtype=torch.float32)  # Convert to tensor
-        
+
         return embeddings_tensor, mos_tensor
 
 # # Create the training DataLoader

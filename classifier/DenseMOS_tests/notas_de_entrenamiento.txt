@@ -1,0 +1,2 @@
+los primeros 3 runs fueron con wav2vec2-base-960
+el 4to con wav2vec2-base

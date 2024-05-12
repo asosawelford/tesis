@@ -13,11 +13,11 @@ class WeightedAverage(torch.nn.Module):
         return torch.sum(x_weighted, dim=1)
 
 class DenseMOS(nn.Module):
-    def __init__(self, input_dim, hidden_dim, dropout_prob):
+    def __init__(self, input_dim, hidden_dim, dropout_prob, num_layers):
         super(DenseMOS, self).__init__()
 
         # add a weighted average layer
-        self.weighted_average = WeightedAverage(num_layers=12)
+        self.weighted_average = WeightedAverage(num_layers)
         
         # First dense layer with 128 neurons, ReLU activation, and dropout
         self.layer1 = nn.Sequential(
@@ -37,6 +37,9 @@ class DenseMOS(nn.Module):
         self.output_layer = nn.Linear(hidden_dim, 1)  # Linear layer to predict MOS
 
     def forward(self, x):
+        # Apply the weighted average to combine 12 layers into 1
+        x = self.weighted_average(x)  # Apply WeightedAverage
+
         # Pass the input through the first dense layer
         x = self.layer1(x)
 
@@ -46,9 +49,9 @@ class DenseMOS(nn.Module):
         # Pass through the final dense layer to get the MOS score
         x = self.output_layer(x)  # Output layer
 
-        # Constrain the output to the 1-5 range
-        x = torch.sigmoid(x)  # Constrain between 0 and 1
-        x = 1 + 4 * x  # Scale to 1-5
+        # # Constrain the output to the 1-5 range
+        # x = torch.sigmoid(x)  # Constrain between 0 and 1
+        # x = 1 + 4 * x  # Scale to 1-5
 
         return x
 

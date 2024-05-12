@@ -7,7 +7,7 @@ from tqdm.auto import tqdm
 from transformers import Wav2Vec2FeatureExtractor, Wav2Vec2Model, Wav2Vec2Config
 import librosa
 
-def wav2vec_embeddings(path_to_csv, output_dir, model_name='facebook/wav2vec2-base-960h'):
+def wav2vec_embeddings(path_to_csv, output_dir, model_name='facebook/wav2vec2-base'):
     """Extracts embeddings from audio files given a specific Wav2Vec2 model.
     Extracts all layers, stacks and saves them as a numpy array.
     Expects csv file with a column named "stimuli" containing paths to audio files."""
@@ -50,16 +50,20 @@ def wav2vec_embeddings(path_to_csv, output_dir, model_name='facebook/wav2vec2-ba
 
 if __name__ == '__main__':
     # extract embeddings for dev set
-    path_to_dev_csv = '/home/aleph/tesis/classifier/dev.csv'
-    path_to_dev_embeddings = '/home/aleph/tesis/classifier/embeddings/dev'
-    wav2vec_embeddings(path_to_dev_csv, path_to_dev_embeddings)
+    path_to_val_csv = '/home/aleph/tesis/classifier/val.csv'
+    path_to_val_embeddings = '/home/aleph/tesis/classifier/embeddings/val'
+    # wav2vec_embeddings(path_to_val_csv, path_to_val_embeddings)
 
     # extract embeddings for test set
     path_to_test_csv = '/home/aleph/tesis/classifier/test.csv'
     path_to_test_embeddings = '/home/aleph/tesis/classifier/embeddings/test'
-    wav2vec_embeddings(path_to_test_csv, path_to_test_embeddings)
+    # wav2vec_embeddings(path_to_test_csv, path_to_test_embeddings)
 
     # extract embeddings for train set
-    path_to_train_csv = '/home/aleph/tesis/classifier/train_merged.csv'
+    path_to_train_csv = '/home/aleph/tesis/classifier/train.csv'
     path_to_train_embeddings = '/home/aleph/tesis/classifier/embeddings/train'
-    wav2vec_embeddings(path_to_train_csv, path_to_train_embeddings)
+    # wav2vec_embeddings(path_to_train_csv, path_to_train_embeddings)
+
+# possible models:
+# facebook/wav2vec2-base
+# facebook/wav2vec2-base-960h

@@ -174,3 +174,4 @@ NISQA_analysis/NISQA_finetuning/stimuli_norm/
 weather/
 database_16k/
 classifier/embeddings/
+classifier/wav2vec2-base-960h/
