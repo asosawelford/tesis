@@ -1,23 +1,22 @@
 notas personales
 
-Obj. General: Generar una base de datos diversa, aplicable... expandible
+Obj. General: Generar una base de datos diversa, aplicable... expandible [X]
      Especifico: -metodología
      		 -explicar el test
      		 -modelo de validacion
      		 -utilidad
 
-Pasar Bases de datos a metodología
+Pasar Bases de datos a metodología. Por ahora no. [X]
 
-Data Augmentation agregar ruido
+Hablar en el marco teorico de como se evalua un TTS [X]
+(creo que ya esta contemplado en la seccion 2.3 Naturalidad)
 
-Hablar en el marco teorico de como se evalua un TTS (creo que ya esta contemplado en la seccion 2.3 Naturalidad)
+Estado del arte separar clasicos (intrusivos vs no intrusivos) vs metricas con redes neuronales [X]
 
-Estado del arte separar clasicos (intrusivos vs no intrusivos) vs metricas con redes neuronales
-
-Para evaluar en resultados:
+Para evaluar en resultados: [X]
 			-Frechet audio distance 
 			-github speech distances https://github.com/AndreevP/speech_distances
 
-ver si probar con wavlm base+ --> esto por si sobra tiempo. va en trabajo a futuro
+ver si probar con wavlm base+ --> esto por si sobra tiempo. va en trabajo a futuro [X]
 
-Empezar a poblar trabajos futuros y después ver que se podría hacer de todo eso.
+Empezar a poblar trabajos futuros y después ver que se podría hacer de todo eso. [X]
