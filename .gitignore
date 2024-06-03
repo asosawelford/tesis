@@ -175,3 +175,4 @@ weather/
 database_16k/
 classifier/embeddings/
 classifier/wav2vec2-base-960h/
+NISQA_analysis/finetuned_model/test_stimuli/
