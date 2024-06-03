@@ -1,8 +1,8 @@
 input_file: null
-pretrained_model: /home/udesa_ubuntu/tesis/NISQA/weights/nisqa_tts.tar
-name: finetune_NISQA_1
+pretrained_model: weights/nisqa_tts.tar
+name: finetune_3
 tr_epochs: 500
-tr_early_stop: 20
+tr_early_stop: 25
 tr_bs: 40
 tr_bs_val: 40
 tr_lr: 0.001
@@ -72,8 +72,8 @@ model: NISQA
 mode: main
 dim: false
 double_ended: false
-data_dir: /home/udesa_ubuntu/tesis/NISQA_analysis/NISQA_finetuning
-output_dir: /home/udesa_ubuntu/tesis/NISQA_analysis/NISQA_finetuning/output_dir
+data_dir: /home/aleph/tesis/frontend/public/assets/stimuli_norm/
+output_dir: /home/aleph/tesis/NISQA_analysis/finetuned_model
 csv_file: merged.csv
 csv_con: null
 csv_deg: filepath_deg
@@ -81,10 +81,10 @@ csv_mos_train: mos
 csv_mos_val: mos
 csv_db_train: [train]
 csv_db_val: [val]
-tr_checkpoint: best_only
+tr_checkpoint: every_epoch
 ms_channel: null
 tr_bias_mapping: null
 tr_bias_min_r: null
 tr_bias_anchor_db: null
 yaml: config/finetune_nisqa.yaml
-now: 2024-02-02 23:17:45.103513
+now: 2024-06-03 01:20:41.803191
