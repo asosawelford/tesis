@@ -18,7 +18,7 @@ csv_db_val:  # dataset names of validation sets, the dataset names must be in 'd
     - val
 
 # Training options
-tr_epochs: 1 # number of max training epochs
+tr_epochs: 500 # number of max training epochs
 tr_early_stop: 25 # stop training if neither validation RMSE nor correlation 'r_p' does improve for 'tr_early_stop' epochs
 tr_bs: 40 # training dataset mini-batch size (should be increased to 100-200 if enough GPU memory available)
 tr_bs_val: 40 # validation dataset mini-batch size (should be increased to 100-200 if enough GPU memory available)
