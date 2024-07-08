@@ -9,10 +9,10 @@ from torch.utils.data import Dataset
 
 # Custom dataset to read embeddings and MOS scores from a CSV
 class MOSDataset(Dataset):
-    def __init__(self, csv_file, split):
+    def __init__(self, csv_file, split, embeddings_folder):
         # Load the CSV file
         self.data = pd.read_csv(csv_file)
-        self.split = split  # Store the split (train, val, test)
+        self.split = split # Store the split (train, val, test)
 
         
     def __len__(self):
@@ -23,7 +23,7 @@ class MOSDataset(Dataset):
         file_name = os.path.basename(self.data.iloc[idx]['stimuli'])
         file_folder = os.path.basename(os.path.dirname(self.data.iloc[idx]['stimuli']))
 
-        embeddings_path = f"/home/aleph/tesis/classifier/embeddings/{self.split}/{file_folder}/{file_name.split('.')[0]}.npy"
+        embeddings_path =  embeddings_folder + f"{self.split}/{file_folder}/{file_name.split('.')[0]}.npy"
 
         # Check if the embeddings file exists
         if not os.path.isfile(embeddings_path):
@@ -35,14 +35,12 @@ class MOSDataset(Dataset):
 
         # Convert the numpy array of embeddings to a tensor
         embeddings_tensor = torch.tensor(embeddings, dtype=torch.float32)
-
-        # drop first layer
-        embeddings_tensor = embeddings_tensor[1:]
-
+                
         # MOS score should be a single value
-        mos_tensor = torch.tensor([mos_score], dtype=torch.float32)  # Convert to tensor
-
+        mos_tensor = torch.tensor([mos_score], dtype=torch.float32)
+        
         return embeddings_tensor, mos_tensor
+
 
 # # Create the training DataLoader
 # train_csv_path = "/home/aleph/tesis/classifier/train.csv"
