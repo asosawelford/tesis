@@ -1,26 +1,28 @@
-# Desarrollo de una base de datos para evaluación automática de sistemas de texto a habla
-Repositorio donde se almacena el codígo vinculado al desarrollo de mi tesis de grado, por el titulo de Ingeniero de Sonido, en la UNTREF. Para comprender mejor el contenido de este repositorio, se recomienda leer la tesis. El archivo mas relevante se encuentra en analysis/subjective_results_corrected.csv. En el mismo, se encuentran los resultados de las evaluaciones subjetivas de los sistemas de texto a habla, en total 4327 calificaciones de audios unicos, probistas por 92 evaluadores. la estructura de este archivo es la siguiente:
+# Source code and adittional results of INTERSPEECH 2025 paper 'A Dataset for Automatic Assessment of TTS Quality in Spanish'* 
+*(link to paper coming soon)
 
-+ `participant_id`: Identificador unico del evaluador.
-+ `age`,`gender_participant`,`country`,`province`: Datos sociodemograficos del evaluador.
-+ `education`: Nivel de familiaridad con voces sinteticas.
-+ `stimuli`: Código del audio evaluado.
-+ `stimuli_service`: Servicio que genero el audio.
-+ `gender_stimuli`: Genero de la voz sintetica.
-+ `dialect`: Dialecto de la voz sintetica. 
+This repository stores the code related to the development of INTERSPEECH 2025 paper 'A Dataset for Automatic Assessment of TTS Quality in Spanish'. The most relevant file can be found at analysis/subjective_results_corrected.csv. This file contains the results of the subjective evaluations of text-to-speech systems—a total of 4,326 unique audio ratings provided by 92 evaluators. The structure of this file is as follows:
 
-## Estructura del repositorio
++ **participant_id**: Unique identifier for the evaluator.
++ **age**, **gender_participant**, **country**, **province**: Sociodemographic data of the evaluator.
++ **education**: Level of familiarity with synthetic voices.
++ **stimuli**: Code of the evaluated audio.
++ **stimuli_service**: Service that generated the audio.
++ **gender_stimuli**: Gender of the synthetic voice.
++ **dialect**: Dialect of the synthetic voice.
 
-El repositorio se encuentra dividido en las siguintes carpetas principales:
+Repository Structure
 
-+ analysis: Contiene los scripts de preprocesamiento y análisis estadistico  de los datos recolectados en la prueba subjetiva.
-+ backend: Contiene los scripts de la base de datos y el servidor web.
-+ classifier: Contiene los scripts de entrenamiento y evaluación de los clasificadores DenseMOS desarrollados en la tesis, incluyendo los splits de entrenamiento, validación y testeo utilizados
-+ embeddings: Contiene los scripts de extracción de embeddings de los audios evaluados.
-+ frontend: Contiene los scripts de la interfaz web.
-+ NISQA: Link al repositorio de NISQA.
-+ NISQA_analysis: Contiene los scripts de finetuneo y evaluación de modelos de NISQA.
-+ write-up: Contiene archivos de referencia y las figuras utilizadas en la tesis, así como un .zip con el código de latex de la misma.
+The repository is divided into the following main folders:
 
-## Audios evaluados
-Si se requiere acceder a los audios evaluados, se puede solicitar enviado un mail a aleandrososawelford [arroba] gmail [punto] com.
++ analysis: Contains preprocessing and statistical analysis scripts for the data collected in the subjective test.
++ backend: Contains scripts for the database and web server.
++ classifier: Contains training and evaluation scripts for the DenseMOS classifiers developed in the thesis, including the training, validation, and test splits used.
++ embeddings: Contains scripts for extracting embeddings from the evaluated audios.
++ frontend: Contains scripts for the web interface.
++ NISQA: Link to the NISQA repository.
++ NISQA_analysis: Contains fine-tuning and evaluation scripts for NISQA models.
++ write-up: Contains reference files and figures used in the thesis, as well as a .zip file with the LaTeX code of the thesis.
+
+Evaluated Audios
+Audio dataset will be made available shortly
